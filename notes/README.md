@@ -1,33 +1,40 @@
 # Notes
+## Intro to Networking Fundamentals 
+A. Overview of computer netowrks and ther importance in modern infrastucture & Devops 
 
-Add your notes here as you progress through this module.
+B. Network basics/Types of Networks -> LAN, WAN etc.
 
-## Template
+C. Key networking components -> Routers, Switches, Firewalls 
 
-When creating a new note, you can use this structure:
+D. IP addressing (IPv4 & IPv6)
 
-```markdown
-# Topic Name
+E. MAC addresses 
 
-## Key Concepts
+F: Ports and Protocols (TCP, UDP)
 
-- Point 1
-- Point 2
+### A: Computer Networks 
+- Definition -> connecting devices to share information
+- Purpose -> Communication and resource sharing 
+#### Core Types of Computer Networks
+1. LAN (Local Area Network) e.g. Home Wi-Fi 
+2. WAN (Wide Area Network) e.g. Internet 
+#### Importance in modern infrastructure 
+- Foundation -> enables communication between devices 
+- Resource sharing -> facilitates sharing of files, printers and more 
+- Internet Functionality -> critical for browsing, streaming and communication 
+- Application support -> backbone of app connectivity and data transfer 
+#### Networking in DevOps 
+- Server Interaction -> Enables communication between servers and applications
+- Deployment -> Critical for launching and updating applications 
+- Management -> Crucial in monitoring and managing infrastructure 
+- Optimisation -> Enhances troubleshooting, performance and scalability 
+### B: Network basics/Types of Networks -> LAN, WAN etc.
+#### Types of Networks 
+1. LAN 
+- - Small area, like a home or office 
+- -  Commects devices and share resources 
+2. WAN 
+- - Large area, like a city, country or a larger region 
+- - Connects multiple LANs 
 
-## Commands
-
-`command` - what it does
-
-## Examples
-
-(code examples)
-
-## What I Learned
-
-(your own summary)
-```
-
-## Your Notes
-
-- [ ] Add your first note
 
