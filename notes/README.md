@@ -55,8 +55,6 @@ Firewalls
 
 ### D. IP addressing (IPv4 & IPv6)
 
-#### IP address & MAC address 
-
 #### IP Addresses 
 
 IP Addressing -> Unique identifiers for devices on a network
@@ -78,6 +76,8 @@ IP Addressing -> Unique identifiers for devices on a network
 - IPv6 -> The transition is essential for the growth of the internet. Includes enhancements like simplfied address assignment and improved security features 
 - IP addresses enables devices to identify and communicate with each other on the network. Without IP addresses, devices wouldn't know where to send or recieve data. 
 
+### E. MAC addresses 
+
 #### MAC Addresses 
 
 MAC Addresses -> Unique identifiers assigned to network interfaces (Media Access Control Address)
@@ -94,4 +94,80 @@ Importance
 
 - Essential for network communication and security 
 
+### F: Ports and Protocols (TCP, UDP)
+#### Ports & Protocols: TCP, UDP 
+
+- What are ports? -> Logical endpoints for communication. Think of ports are logical doors on your device. Each door is numbered and each number is used for a specific type of network communication e.g. web traffic typically goes through port 80 (HTTP) and port 443 for HTTPS. These ports help facilitate communcation between devices. When your computer wants to send or rreceive  data is uses these ports to make sure that the data goes to the right place. 
+
+- Definition of Protocols -> Rules governing data transmission. Rules of the road for data transmission. Common protocols include HTTP, FTP, SNTP and more. Protocols are languages devices use to talk to each other. 
+
+- Importance -> Facilitates communication between devices. Without ports and protocols our device communication would be a mess. Ports make sure the data gets to the application and protocols makes sure data is understandble and properly formatted for smooth communication. 
+
+#### Transmission Control Protocol (TCP)
+
+- It is the postman of the internet. It ensures that data sent from one device reaches another device accuratley and in the correct order. It is a protocol which means there is a set of rules that is folllows. 
+
+##### Characteristics of TCP 
+1. Connection-oriented -> This means that before any data is sent, a connection is sent between two devices. A bit like a phone call, you need to dial and get connected first.
+
+2. Requires a 'handshake' -> This is the process where the two devices agree to communication. Its like when two people handshake when they agree on something. In networking this handshake is a three step process to make sure that both devices are ready to send and rreceive  data. 
+
+3. Reliable data transfer -> TCP makes sure that all data is sent correctly. If any data is lost or corrupted, TCP will send it. 
+
+##### Functions of TCP 
+1. Ensures data is delivered in order -> TCP make sure the data is delivered in the correct order. 
+2. Error-checking and flow control -> this is to prevent congestion. 
+3. Any bidirectional communication -> communication happens back and forth 
+
+#### User Datagram Protocol (UDP)
+- UDP is a simple protocol used to send and receive  data. Unlike TCP, UDP is connectionless. 
+
+##### Characteristics of UDP 
+1. Simple protocol to send and receive data.
+
+2. Prior communication not required (can be a double-edged sword). Pro -> data can be sent immediatley without waiting for the connection to be established. Con -> there is no gurantee that the data will reach its destination 
+
+3. Connectionless 
+
+4. Fast but less reliable 
+
+##### Functions of UDP 
+1. Suitable for real-time applications (e.g. video streaming)
+
+2. DNS 
+
+3. VPN - Virtual private network 
+
+##### TCP vs UDP 
+
+<table>
+<tr>
+<th>Comparison</th>
+<th>TCP</th>
+<th>UDP</th>
+</tr>
+<tr>
+<td>Connection</td>
+<td>Connection -oriented</td>
+<td>Connectionless</td>
+</tr>
+<td>Reliability</td>
+<td>Reliable, ensures data delivery and order </td>
+<td>Less reliable, no gurantee of deliver or order </td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>Slower due to overhead of connection setup</td>
+<td>Faster, no connection or handshake setup is required</td>
+</tr>
+<tr>
+<td>Error - checking</td>
+<td>Error-checking and flow control</td>
+<td>No error-checking or flow control</td>
+</tr>
+<tr>
+<td>Use-cases</td>
+<td>Web browsing, email, file transfer</td>
+<td>Video streaming, online gaming, DNS, VPN</td>
+</tr>
 
