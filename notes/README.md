@@ -260,6 +260,30 @@ Importance
 - Components -> HTTP, FTP, SMTP
 - It is the top layer of the OSI model. Everything happens that you the user can interact with. FTP is when your are transferring files between different servers generally. SMTP is being used when sending emails. 
 
-#### TCP/IP Model: A commonly used model 
+#### TCP/IP Model: A commonly used model
+1. Application Layer -> HTTP, TLS, DNS 
+2. Transport Layer -> TCP, UDP 
+3. Internet Later -> IP 
+4. Network Access Layer -> Ethernet, Wireless LAN 
+
 #### OSI Layers: POV of sender & receiver 
+##### POV of Sender 
+"User sends a POST request to an HTTP web page
+1. Layer 7 - Application -> POST request with JSON data to the HTTPS server 
+2. Layer 6 - Presentation -> Serialise JSON to flat byte data strings 
+3. Layer 5 - Session -> Request to esablish TCP connection/TLS
+4. Layer 4 - Transport -> Sends SYN request to target port 443 which is HTTPS 
+5. Layer 3 - Network -> SYN in an IP packets and add the source/destination IP 
+6. Layer 2 - Data Link Layer -> Each packet goes into a single frame and adds the source/destination MAC addresses 
+7. Layer 1 - Physical -> Eac hframe become string of bits which is converted into wither a radio signal (Wi-Fi), electrical signal (Ethernet), or light (Fibre)
+##### POV of Receiver
+"User sends a POST request to an HTTP web page"
+1. Layer 1 - Physical -> Radio, electric or light is recieved and converted into digital bits 
+2. Layer 2 - Data Link -> the bits from layer 1 is assembled into frame 
+3. Layer 3 - Network -> The frame forms layer 2 are assembled into an IP packet 
+4. Layer 4 - Transport -> The IP packets from layer 3 are assembled into TCP segments 
+5. Layer 5 - Session -> The connection session is established 
+6. Layer 6 - Presentation -> Decrypt and decompresses the data recieved 
+7. Layer 7 - Application -> Interprets the HTTP request and processes it accordingly  
+
 #### Port and Protocol RECAP 
