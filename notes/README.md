@@ -170,4 +170,96 @@ Importance
 <td>Web browsing, email, file transfer</td>
 <td>Video streaming, online gaming, DNS, VPN</td>
 </tr>
+</table>
 
+## OSI Model 
+#### The 7-layers of the OSI model 
+#### Why do we need a communication model?
+- Provides a standard framework that simplifies the way devices and applications communicate over a network. 
+#### Application independence 
+-  Without a standard model, applications must understand the underlying network 
+- Imagine having different versions of your application/software for WiFi, Ethernet,Fiber etc. 
+#### Simplified Network Equipment Managment 
+- Upgrading network equipment is difficults without a standard model 
+#### Decoupled innovation 
+- Innovations can happen in each layer independently, without affecting the entire system 
+
+#### 7 layers of Application 
+<table>
+<tr>
+<td>Application</td>
+<td> -> End user layer
+
+-> HTTP, FIP, IRC, SSH, DNS</td>
+</tr>
+<tr>
+<td>Presentation</td>
+<td>-> Syntax user layer
+
+   -> SSL, SSH, IMAP, FTP, MPEG, JPEG</td>
+</tr>
+<tr>
+<td>Session</td>
+<td> -> Sync and send to port 
+
+-> API's, Sockets, Winsock</td>
+</tr>
+<tr>
+<td>Transport</td>
+<td>-> End-to-end Connections 
+
+-> TCP, UDP</td>
+</tr>
+<tr>
+<td>Network</td>
+<td>-> Packets
+
+-> IP, ICMP, IPSec, IGMP</td>
+</tr>
+<tr>
+<td>Data-link</td>
+<td>-> Frames 
+
+-> Ethernet, PPP, Switch, Bridge</td>
+</tr>
+<tr>
+<td>Physical</td>
+<td>-> Physical Structure
+
+-> Coax, Fibre, Wireless, Hubs, Repeaters</td>
+</tr>
+</table>
+
+#### Layer 1: Physical Layer 
+- Function -> Transmits raw bit steam over a physical medium 
+- Components -> Cables, Switches and Network interface cards 
+
+-> This deals with the hardware connection including cables, switches and network interface cards. Physical medium can be copper that transmitts electric signals, fibre, light waves and wifi. There is no device addressing here -> that means that all data is processed by all devices. Think of it like shouting in a room without saying any names. This is the limitation at layer 1 and it is solved in Layer 2. 
+#### Layer 2: Data Layer 
+- Function -> This layer provides node-to-node data transfer and detects, possibly corrects, errors that may occure in the Physical Layer. It ensures that data is transferred correctly between adjacent network nodes. 
+- Components -> Mac addresses, Switched and Bridges  
+- Think of it as a traffic cop, that ensures data packets are sent and received correctly between differnt network nodes. Its all about maintaining a reliable network link between different devices. In layer 1 data is sent randomly and not in order. Layer 2 puts your data packets into frames where it is actually organised, like envelopes carrying the data to ensure it gets to the right place. 
+#### Layer 3: Network Layer 
+- Function -> Determines how data is sent to the recipient. Manages packet forwarding including routing through intermediate routers. 
+- Components -> IP addresses, Routers 
+- Decides the best path for data to travel. Data in this layer are organised in packets. Packets are like little parcels that carry data from one device to another. IP addresses handle where packets go to. Routers are components that allow it to do its job. 
+#### Layer 4 Transport Layer 
+- Function -> Provides reliable data transfer services to the upper layers. Segments and reassembles data. 
+- Components -> TCP, UDP 
+- Think of it like the delivery service that make sure your data packets arrive safely and in the right sequence.
+#### Layer 5: Session Layer 
+- Function -> Manages sessions between applications. Establishes, maintains and terminates connections
+- Components -> Session management protocols 
+- Establishing means getting a session started like when you login to a website for example. Maintaining means keeping the session alive ensuring that any conversions or requests can continue smoothly. Terminating would be closing any session e.g. logging out or closing the browser 
+#### Layer 6: Presentation Layer 
+- Function -> Translates data between the application later and the network. Ensures that data is in a usable format 
+- Components -> Encryption, data formatting 
+- Sometimes known as the syntax layer. Why? Because it ensures that the data being sent is in a readble and usable format. Think of it like a translator that converts your data into a format that the application layer (layer 7) can understand. Encryption is for security. 
+#### Layer 7: Application Layer 
+- Function -> Provides network services directly to applications. End-user layer 
+- Components -> HTTP, FTP, SMTP
+- It is the top layer of the OSI model. Everything happens that you the user can interact with. FTP is when your are transferring files between different servers generally. SMTP is being used when sending emails. 
+
+#### TCP/IP Model: A commonly used model 
+#### OSI Layers: POV of sender & receiver 
+#### Port and Protocol RECAP 
