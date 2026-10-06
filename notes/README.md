@@ -286,4 +286,28 @@ Importance
 6. Layer 6 - Presentation -> Decrypt and decompresses the data recieved 
 7. Layer 7 - Application -> Interprets the HTTP request and processes it accordingly  
 
-#### Port and Protocol RECAP 
+## DNS 
+#### What is DNS?
+- Domain Name System 
+- DNS allows us to keep track of websites or host by name instead of an IP address 
+- A bit like a contact list for the internet 
+- A bit like you know someones name but not their phone number, you could just find their name and call them.
+
+-> Definition: Translate domain names to IP addresses 
+
+-> Role in Networking: Simplifies navigation on the internet. Essential for accessing websites and services 
+
+#### DNS Components -> Nameservers & Zone files 
+##### Name Servers 
+- Load DNS settings and configurations
+- Can be authoritative (hold the actual DNS servers when queried they provide the definite answer such as the IP address for a domain) or recursive (these servers do not hold the final answer. Can cash the information they receive to speed up future queries)
+- Can find the NS of a domain doing the ~dig ns google.com OR ~ dig +short ns google.com
+
+##### Zone files 
+- Are stored inside the name servers 
+- Store information about the domain 
+- Organised and readable format 
+#### DNS Components -> Records 
+#### How does DNS work?
+#### Networking Debugging Tools: 'nloopup' and 'dig'
+#### ./etc/hosts file 
