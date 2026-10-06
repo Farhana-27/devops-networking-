@@ -307,7 +307,40 @@ Importance
 - Are stored inside the name servers 
 - Store information about the domain 
 - Organised and readable format 
+
 #### DNS Components -> Records 
+- A Zone file consists of multiple records. 
+- Each record hosts name servers etc. 
+- Entreis in a zone file with specific information 
+- Components: Record name, TTL, Class, Type, Data 
+1. Record name -> The domain name being queried 
+2. Time to live (TTL) -> Indicates how long the record is valid (before refresh required)
+3. Class -> Namespace of the record information 
+4. Type -> Type of record (A or MX or AAAA etc)
+5. NS -> Name server record 
+6. Data -> The actual information corresponding to the record type. Like IP address for an A record 
+
+##### DNS Records 
+1. A -> Maps a domain name to an IPv4 address 
+
+EXAMPLE google.com -> 216.58.204.79
+
+2. AAAA -> Maps a domain name to an IPv6 address 
+
+EXAMPLE google.com -> 2a00:1450:4009:81d::200e
+
+3. CNAME -> Alias of one name to another. It allows you to point multiple domain names to the same IP address 
+
+EXAMPLE www.google.com -> google.com 
+
+4. MX -> Specifies the mail server responsible for receiving email for the domain (mail exchange) - essential for writing email to make sure email delivery is reliable
+
+EXAMPLE google.com -> mailserver.google.com
+
+5. TXT -> Allows domain administators to insert any test into DNS. Commonly used for verification purposes and to hold SPF (Sender Policiy Framework) data. Can be used to verify that you own the domain 
+
+EXAMPLE google.com -> "v=spf1 include.com ~all"
+
 #### How does DNS work?
 #### Networking Debugging Tools: 'nloopup' and 'dig'
 #### ./etc/hosts file 
