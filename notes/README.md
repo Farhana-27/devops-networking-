@@ -373,7 +373,7 @@ EXAMPLE google.com -> "v=spf1 include.com ~all"
 ![DNS](../images/DNS2.png)
 
 #### Networking Debugging Tools: 'nloopup' and 'dig'
-##### DNS Tools
+##### DNS Toolsup
 - nslookup 
 - - Syntax: nslookup[domain]
 - - Example: nslookup www.google.com
@@ -398,5 +398,40 @@ EXAMPLE google.com -> "v=spf1 include.com ~all"
 
 -> dig +short ns google.com
 
+#### /etc/hosts file 
+##### Understanding the /etc/hostsfile 
+What is a /etc/hosts?
+- A local file on your computer
+- Maps domian names to IP addresses 
+- Allows you to overide DNS settings for certain domains by providing an alternative IP address
+- How do it work? When you type in a domain in your browser, your computer first checks the /etc/hosts file. If the domain is listed in this file it uses the provided IP address instead of quering the DNS server 
+- This can be useful for testing, developing and trouble shooting 
+##### Editing the /etc/hosts file 
 
-#### ./etc/hosts file 
+1. Editing /etc/hosts
+2. Open file with text editor - you need admin privileges e.g. sudo vim /etc/hosts or sudo nano /etc/hosts 
+3. Add an entry with the format: IP_address domain_name. Example: 127.0.0.1example.com
+
+Practical Examples 
+1. Redirecting a Domain: Map example.com to localhost 
+2. Custom Domain for Local Development: Map dev.local to a local server IP 
+
+## Routing 
+#### What is Routing and Why it Matters?
+- Definition -> Process of determining paths for data to travel across networks 
+- Importance of Routing -> Ensures data reaches its destination efficiently. It is fundamental for internet functionality. 
+
+##### Routing process 
+- Routers determine the best path 
+- Using routing tables to make decisions 
+##### Key components 
+- Routers 
+- Routing tables 
+##### Why Routing matters for DevOps?
+1. Network performance optimization 
+2. Ensures reliable application delivery 
+3. Crucial for managing complext infrastructures 
+
+
+
+
