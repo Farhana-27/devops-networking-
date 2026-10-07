@@ -372,15 +372,31 @@ EXAMPLE google.com -> "v=spf1 include.com ~all"
 
 ![DNS](../images/DNS2.png)
 
-
-
-
-
-
-
-
-
-
-
 #### Networking Debugging Tools: 'nloopup' and 'dig'
+##### DNS Tools
+- nslookup 
+- - Syntax: nslookup[domain]
+- - Example: nslookup www.google.com
+
+- dig (domain information groper)
+- - Syntax: dig [domain]
+- - Example: dig www.google.com
+
+##### Example in terminal 
+
+-> nslookup google.com
+- Server:         192.168.0.1 -> This is the server that you are going through to get to where you destination is. This is generally your router, your internet provider, your local server.
+- Address:        192.168.0.1#53 -> Same thing but specifies the port which is port 53
+
+- Non-authoritative answer: -> NA answer means the response came back from cashe, and not directley from the Authoritative DNS server 
+- Name:   google.com
+- Address: 142.251.30.101
+
+-> dig google.com -> detailed info 
+
+-> dig +short google.com -> shorter version of above 
+
+-> dig +short ns google.com
+
+
 #### ./etc/hosts file 
