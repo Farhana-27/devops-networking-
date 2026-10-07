@@ -342,5 +342,45 @@ EXAMPLE google.com -> mailserver.google.com
 EXAMPLE google.com -> "v=spf1 include.com ~all"
 
 #### How does DNS work?
+##### DNS Resolution
+- DNS resolution -> converts domain names to IP addresses and involves multiple steps and servers
+##### DNS Hierarchy and Distribution 
+1. DNS Root (The Boss) -> Top of the hierarchy. Has high level info on the top domains 
+
+2. Top level domains (TLD) -> Include familiar extensions e.g. .com Registry is managed by Verisign. Each TLD stores information about the domain in its scope just like a department head knows all of its employees. 
+
+3. Authroritative Name Servers (Host 1+ Zones for domains) -> A bit like managers that oversee teams. Each authroritative name server holds zones for the domains. e.g. google.com and x.com have their own DNS records stored here. 
+
+4. Domain e.g. google.com -> Each domain has a Zone and a Zonefile. The zone is like a team in a department and Zonefile is a detailed list of record for that domain
+
+##### DNS Resolution Process 
+
+![DNS](../images/DNS.png)
+
+##### Importance of DNS Resolution for DevOps Engineers. 
+
+- Ensures Service Availabillity 
+- Essential for troubleshooting DNS issues 
+3. Critical for configuring and managing network services 
+
+##### Domain Registrar vs DNS Hosting Provider 
+
+- Registrar -> is an entity that allows you to purchase and register Domains 
+- DNS Hosting -> is an entity that operates DNS Nameservers 
+
+##### Actual DNS process 
+
+![DNS](../images/DNS2.png)
+
+
+
+
+
+
+
+
+
+
+
 #### Networking Debugging Tools: 'nloopup' and 'dig'
 #### ./etc/hosts file 
