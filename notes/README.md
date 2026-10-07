@@ -432,6 +432,170 @@ Practical Examples
 2. Ensures reliable application delivery 
 3. Crucial for managing complext infrastructures 
 
+#### Static vs Dynamic Routing 
+1. Static Routing -> (Giving your map a set directions to follow)
+- - Manually configured routes 
+- - Fixed paths set by network administrators 
+- - Simple but not scalable 
+- - Manual setup can be cumbersome and gives room for errors 
+- - Ok for simple network 
+
+2. Dynamic Routing -> (Using a GPS, of you change your route, it recalculates that route - smart GPS)
+- - Routes are automatically adjusted 
+- - Uses routing protocols to find the best path 
+- - is scalable and adaptable - good for large networks 
+
+#### Common Routing Protocols 
+
+##### Routing Protocols 
+- Automate route determination 
+- Enhance network efficiency 
+##### What are Routing Protocols?
+- What are they? -> Algorithms that determine best paths 
+- Importance -> Automate route updates. Improve network resilience 
+##### Most common protocols 
+- OSPF -> Open Shortest Path First 
+- BGP -> Border Gateway Protocol 
+
+## Subnetting
+
+##### What is Subnetting?
+- Dividing a network into smaller networks 
+- Improves network management and efficiency 
+##### Understanding CIDR Notation 
+- CIDR -> Classless Inter-Domain Routing 
+- Format -> IP_address/prefix_length
+- Example -> 192.168.1.0/24
+
+##### Binary: Yep 1s and 0s 
+
+- 11001010 -> Base-2 number system - uses digits 0 and 1 
+##### Understanding Binary Numbers 
+- 101010 ->Each digits is a bit 
+- Going backwards 
+- - 0 -> (2^0 x 0) = 1 x 0 = 0
+- - 1 -> (2^1 x 1) = 2 x 1 = 2 
+- - 0 -> (2^2 x 0) = 4 x 0 = 0
+- - 1 -> (2^3 x 1) = 8 x 1 = 8
+- - 0 -> (2^4 x 0) = 16 x 0 = 0
+- - 1 -> (2^5 x 1) = 32 x 1 =32
+- - - 0 + 2 + 0 + 8 + 0 + 32 = 42 
+
+##### Binary and IP Addresses 
+- IP Addresses in Binary -> Example: 192.168.1.1 in binary 
+- 192 in binary: 11000000
+- Divide 192 by 2 until you reach 0, notng the remainders:
+- - 192/2 = 96, remainder 0 
+- - 96/2 = 48, remainder 0 
+- - 48/2 = 24, remainder 0 
+- - 12/2 = 6, remainder 0 
+- - 6/2 = 3, remainder 0 
+- - 3/2 = 1, remainder 1 
+- - 1/2 = 0, remainder 1 
+- Read the remainders in reverse: 11000000
+
+- 192 (11000000), 168 (10101000), 1 (0000001), 1(0000001)
+
+##### Practical Example 
+- Example: converting IP address and Subnet mask 
+- *Convert 10.0.0.1 and 255.0.0.0 to binary 
+- 10.0.0.1 > 00001010.00000000.00000000.00000001
+
+##### Calculating Subnets 
+- Subnet Calculation 
+- - Dividing a network into subnets 
+- - Determines network and host portions 
+
+##### Understanding Subnet Masks 
+
+![SUBNETS](../images/SUBNETS.png)
+
+##### Calculating Subnets
+- Determining Host Ranges 
+- - Host Ranges in Subnets 
+- - Example: Subnet 192.168.1.0/26
+
+##### NAT
+
+-> What is NAT?
+- Stands for Network Address Translation 
+- Translates private IP addresses to a public IP address 
+- Facilitates communication between internal network and the internet 
+
+-> How NAT Works?
+- NAT Process 
+- -  Internal devices use private IP addresses 
+- - Router translates private to public IP 
+- - Facilitates communication with external networks 
+ 
+ -> Types of NAT 
+ - Static NAT 
+ - Dynamic NAT 
+ - PAT (Port Address Translation)
+
+ ##### Simple NAT Example 
+
+ 1. Abz wants to connect to www.google.com
+ 2. Router translates private IP to public IP 
+ 3. Google sees the public IP, not Abz's private IP 
+
+##### Benefits of NAT for DevOps Engineers 
+1. Conserves public IP addresses 
+2. Enhances network security 
+3. Simplifies network design and management 
+
+## Troubleshooting 
+
+##### Why Troubleshoot?
+- Ensure smooth operation 
+- Identify and fix network problems 
+- Minimize downtime 
+
+##### Common Network Issues 
+- Connectivity loss 
+- Slow network performance 
+- IP address conflicts 
+- DNS resolution failures 
+
+##### Practical Example: Connectivity loss 
+- Example -> connectivity loss 
+- Symptom -> Devices can't access the network 
+- Steps to diagnose:
+1. Check physical connections
+2. Verify network connections 
+3. Test with ping command 
+
+##### Network Tools 
+1. Ping 
+2. Traceroute 
+3. Nslookup 
+
+-> Ping command 
+- Tests connectivity 
+- - Syntax: ping [IP address or domain]
+- - Example: ping google.com
+
+-> Traceroute Command 
+- Tracks the path to the destination 
+- - Syntax: traceroute [domain] (Linux/macOS) or tracert [domain] (Windows)
+- - Example traceroute google.com
+
+-> Nslookup Command 
+- Queries DNS for IP addresses 
+- - Syntax: nslookup [domain]
+- - Example: nslookup google.com
+
+- Practical example: I can't reach a website, how can i troubleshoot?
+
+
+
+
+
+
+
+
+
+
 
 
 
