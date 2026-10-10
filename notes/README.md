@@ -590,6 +590,12 @@ Practical Examples
 
 - Practical example: I can't reach a website, how can i troubleshoot?
 
+- Layer 1: Is it connected? Is the network interface up? - ip link 
+- Layer 3: Can I reach the machine? - ping 10.0.0.5
+- Layer 4: Is the port open and listening? - ss -tulnp
+- Layer 7: Is the app answering properly? curl -I https://site 
+
+
 
 
 
