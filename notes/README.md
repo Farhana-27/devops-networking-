@@ -185,6 +185,9 @@ Importance
 - Innovations can happen in each layer independently, without affecting the entire system 
 
 #### 7 layers of Application 
+
+Please Do Not Throw Sausage Pizza Away  - Acronym 
+
 <table>
 <tr>
 <td>Application</td>
